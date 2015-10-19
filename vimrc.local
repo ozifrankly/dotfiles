@@ -1,0 +1,26 @@
+autocmd BufWritePre * :%s/\s\+$//e
+set sw=2
+set sts=2
+set expandtab
+set autoindent
+
+""""""""""""""""""""""""""
+"  Tab navagation        "
+"  """"""""""""""""""""""""""
+
+map tn :tabn<CR>
+map tp :tabp<CR>
+map tm :tabm
+map tt :tabnew
+map ts :tabsplit<CR>
+map <C-S-Right> :tabn<CR>
+imap <C-S-Right> <ESC>:tabn<CR>
+map <C-S-Left> :tabp<CR>
+imap <C-S-Left> <ESC>:tabp<CR>
+
+
+noremap <leader>w <C-w>v<c-w>l
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
